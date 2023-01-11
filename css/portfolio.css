@@ -185,21 +185,17 @@ color: var(--brand-blue-color);
 }
 
 .picture-title {
-    margin: 0;
     margin: 0 0 4px 0;
+    padding-left: 24px;
 
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.list-image {
-    margin: 0 0 20px;
-}
-
 .picture-description {
     margin: 0;
-    padding-bottom: 20px;
+    padding-left: 24px;
 
     font-size: 16px;
     line-height: 1.75;
