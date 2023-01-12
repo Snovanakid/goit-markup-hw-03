@@ -5,16 +5,20 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+
 ul {
     list-style: none;
 }
+
 :root {
     --brand-blue-color: #2196F3;
     --main-title-text: #212121;
     --secondary-text: #757575;
+    --background-color: #2F303A;
+    --main-background-color: #ffffff;
 }
 
-.container  {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -24,9 +28,12 @@ ul {
     margin-bottom: 0;
 }
 
+/* -------------------HEADER------------------ */
+/* -------------------HEADER------------------ */
+/* -------------------HEADER------------------ */
+
 .header {
     border-bottom: 1px solid #ECECEC;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navigation {
@@ -42,6 +49,7 @@ ul {
 
 .container.navigation {
     display: flex;
+
 }
 
 .container.line-nav {
@@ -63,7 +71,7 @@ ul {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-color: var(--brand-blue-color);
+    color: var(--brand-blue-color);
 }
 
 .header-logo {
@@ -75,12 +83,13 @@ color: var(--brand-blue-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
 }
 
 .header-logo .colorsplit-header {
     color: #000000;
 }
- 
+
 .nav-link:not(:last-child) {
     margin-right: 50px;
 }
@@ -111,6 +120,7 @@ color: var(--brand-blue-color);
     line-height: 1.17;
     letter-spacing: 0.02em;
 }
+
 .phone {
     color: var(--secondary-text);
     text-decoration: none;
@@ -120,21 +130,24 @@ color: var(--brand-blue-color);
 }
 
 /* ---------------MAIN--------------------- */
+/* ---------------MAIN--------------------- */
+/* ---------------MAIN--------------------- */
+
+.portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 
 .button-list {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    margin: 0;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 } 
 
 .button-portfolio {
-    height: 38px;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-top: 94px;
     margin-bottom: 50px;
 
     font-weight: 500;
@@ -145,8 +158,8 @@ color: var(--brand-blue-color);
     cursor: pointer;
     font-family: inherit;
     background: #F5F4FA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .button-portfolio:not(last-child) {
     margin-right: 8px;
 }
@@ -155,6 +168,8 @@ color: var(--brand-blue-color);
 .button-portfolio:focus {
     background-color: var(--brand-blue-color);
     color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
 }
 
 .icons-list {
@@ -173,7 +188,10 @@ color: var(--brand-blue-color);
     width: 370px;
     height: 404px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-text {
+    padding: 20px 24px;
 }
 
 .list-content:nth-child(3n) {
@@ -181,13 +199,11 @@ color: var(--brand-blue-color);
 }
 
 .list-content:nth-last-child(-n + 3) {
-    margin-bottom: 94px;
+    margin-bottom: 0;
 }
 
 .picture-title {
     margin: 0 0 4px 0;
-    padding-left: 24px;
-
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -195,26 +211,20 @@ color: var(--brand-blue-color);
 
 .picture-description {
     margin: 0;
-    padding-left: 24px;
-
     font-size: 16px;
     line-height: 1.75;
     color: var(--secondary-text);
 }
 
 /* -------------FOOTER--------------- */
+/* -------------FOOTER--------------- */
+/* -------------FOOTER--------------- */ 
 
 .footer {
-    background-color: #2F303A;
-    width: 1600px;
-    height: 252px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: var(--background-color);
 }
 
-.container.footer {
+.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -238,7 +248,7 @@ color: var(--brand-blue-color);
 }
 
 .footer-logo .colorsplit-footer {
-    color: #ffffff;
+    color: var(--main-background-color);
 }
 
 .address {
@@ -250,14 +260,15 @@ color: var(--brand-blue-color);
 }
 
 .address-items:not(:last-child) {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .map-location {
     line-height: 1.7;
-    color: #ffffff;
+    color: var(--main-background-color);
     text-decoration: none;
 }
+
 .mail-footer,
 .phone-footer {
     line-height: 1.7;

@@ -12,6 +12,8 @@ ul {
     --brand-blue-color: #2196F3;
     --main-title-text: #212121;
     --secondary-text: #757575;
+    --background-color: #2F303A;
+    --main-background-color: #ffffff;
 }
 
 .container  {
@@ -22,6 +24,14 @@ ul {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* -------------------HEADER------------------ */
+/* -------------------HEADER------------------ */
+/* -------------------HEADER------------------ */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .navigation {
@@ -116,8 +126,12 @@ color: var(--brand-blue-color);
     letter-spacing: 0.02em;
 }
 
+/* ----------------MAIN---------------- */
+/* ----------------MAIN---------------- */
+/* ----------------MAIN---------------- */
+
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-color);
 
     height: 600px;
     width: 1600px;
@@ -132,7 +146,7 @@ color: var(--brand-blue-color);
     margin-top: 0;
     margin-bottom: 30px;
 
-    color: #FFFFFF;
+    color: var(--main-background-color);
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
@@ -147,9 +161,9 @@ color: var(--brand-blue-color);
     margin-left: auto;
     margin-right: auto;
     padding: 10px 32px;
-
+    font-size: 16px;
     background-color: var(--brand-blue-color);
-    color: #ffffff;
+    color: var(--main-background-color);
     text-align: center;
     line-height: 1.87;
     cursor: pointer;
@@ -201,6 +215,7 @@ color: var(--brand-blue-color);
 
 .what-we-do {
     margin-bottom: 0;
+    padding-bottom: 94px;
 }
 
 .what-we-do-title {
@@ -215,7 +230,6 @@ color: var(--brand-blue-color);
 .what-we-do-list {
     display: flex;
     margin: 0;
-    padding-bottom: 94px;
     padding-left: 0;
 }
 
@@ -251,14 +265,23 @@ color: var(--brand-blue-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     width: 270px;
     height: 368px;
-    background: #FFFFFF;
+    background: var(--main-background-color);
     border-radius: 0px 0px 4px 4px;
 }
 
-.name-title {
-    margin-top: 30px;
-    margin-bottom: 10px;
+.portrait {
+    display: block;
+}
 
+.portrait-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.name-title {
+    margin-bottom: 10px;
+    margin-top: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
@@ -266,34 +289,31 @@ color: var(--brand-blue-color);
 }
 
 .speciality {
-    padding-bottom: 30px;
     margin-top: 0;
     margin-bottom: 0;
-
     font-size: 16px;
     line-height: 1.17;
     color: #757575;
     text-align: center;
 }
 
+/* ----------------FOOTER--------------- */
+/* ----------------FOOTER--------------- */
+/* ----------------FOOTER--------------- */
+
 .footer {
-    background-color: #2F303A;
-    width: 1600px;
-    height: 252px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: var(--background-color);
+
 }
 
-.container.footer {
+.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-logo {
-display: block;
-margin-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 
     color: var(--brand-blue-color);
     font-family: Raleway, sans-serif;
@@ -310,7 +330,7 @@ margin-bottom: 20px;
 }
 
 .footer-logo .colorsplit-footer {
-    color: #ffffff;
+    color: var(--main-background-color);
 }
 
 .address {
@@ -322,12 +342,12 @@ margin-bottom: 20px;
 }
 
 .address-items:not(:last-child) {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .map-location {
     line-height: 1.7;
-    color: #ffffff;
+    color: var(--main-background-color);
     text-decoration: none;
 }
 .mail-footer,
