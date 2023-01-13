@@ -1,6 +1,6 @@
 body {
     background-color: #FFFFFF;
-    color: #212121;
+    color:var(--main-title-text);
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -14,6 +14,9 @@ ul {
     --secondary-text: #757575;
     --background-color: #2F303A;
     --main-background-color: #ffffff;
+    --logo-black-part: #000000;
+    --border-elements-color: #ECECEC;
+    --secondary-bg-color: #F5F4FA;
 }
 
 .container  {
@@ -31,12 +34,13 @@ ul {
 /* -------------------HEADER------------------ */
 
 .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-elements-color);
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .site-nav {
@@ -52,7 +56,6 @@ ul {
 
 .container.line-nav {
     display: flex;
-    height: 80px;
     align-items: center;
 }
 
@@ -85,9 +88,15 @@ color: var(--brand-blue-color);
 }
 
 .header-logo .colorsplit-header {
-    color: #000000;
+    color: var(--logo-black-part);
 }
  
+.link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .nav-link:not(:last-child) {
     margin-right: 50px;
 }
@@ -95,7 +104,6 @@ color: var(--brand-blue-color);
 .contact-links {
     display: flex;
     margin: 0;
-    padding: 0;
     margin-left: auto;
 }
 
@@ -111,6 +119,7 @@ color: var(--brand-blue-color);
 
 .mail {
     margin-right: 50px;
+    padding: 32px 0;
 
     text-decoration: none;
     color: var(--secondary-text);
@@ -119,6 +128,8 @@ color: var(--brand-blue-color);
     letter-spacing: 0.02em;
 }
 .phone {
+        padding: 32px 0;
+
     color: var(--secondary-text);
     text-decoration: none;
     font-weight: 500;
@@ -133,19 +144,17 @@ color: var(--brand-blue-color);
 .hero {
     background-color: var(--background-color);
 
-    height: 600px;
-    width: 1600px;
-
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 200px 452px 280px;
+    padding: 200px 0;
 }
 
 .hero .hero-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
+    margin: 0 auto 30px;
+    display: block;
+ 
+    width: 696px;
     color: var(--main-background-color);
     text-align: center;
     text-transform: uppercase;
@@ -161,6 +170,7 @@ color: var(--brand-blue-color);
     margin-left: auto;
     margin-right: auto;
     padding: 10px 32px;
+    
     font-size: 16px;
     background-color: var(--brand-blue-color);
     color: var(--main-background-color);
@@ -188,9 +198,6 @@ color: var(--brand-blue-color);
     padding-left: 0;
 }
 
-.benefits-item {
-    width: 270px;
-}
 
 .benefits-item:not(:last-child) {
     margin-right: 30px;
@@ -206,19 +213,19 @@ color: var(--brand-blue-color);
 }
 
 .benefits-text {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
 
     line-height: 1.7;
-    color: #757575;
+    color: var(--secondary-text);
 }
 
-.what-we-do {
+.services {
     margin-bottom: 0;
     padding-bottom: 94px;
 }
 
-.what-we-do-title {
+.services-title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -227,18 +234,22 @@ color: var(--brand-blue-color);
     line-height: 1.17;
 }
 
-.what-we-do-list {
+.services-list {
     display: flex;
     margin: 0;
     padding-left: 0;
 }
 
-.what-we-do-img:not(:last-child) {
+.services-pictures {
+    display: block;
+}
+
+.services-img:not(:last-child) {
     margin-right: 30px;
 }
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bg-color);
 
     padding-top: 94px;
     padding-bottom: 94px;
@@ -246,7 +257,7 @@ color: var(--brand-blue-color);
 
 .team-title {
     margin-top: 0;
-    margin-bottom: 94px;
+    margin-bottom: 50px;
 
     text-align: center;
     font-size: 36px;
@@ -263,8 +274,6 @@ color: var(--brand-blue-color);
 
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 270px;
-    height: 368px;
     background: var(--main-background-color);
     border-radius: 0px 0px 4px 4px;
 }
@@ -293,7 +302,7 @@ color: var(--brand-blue-color);
     margin-bottom: 0;
     font-size: 16px;
     line-height: 1.17;
-    color: #757575;
+    color: var(--secondary-text);
     text-align: center;
 }
 
@@ -306,7 +315,7 @@ color: var(--brand-blue-color);
 
 }
 
-.footer-container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }

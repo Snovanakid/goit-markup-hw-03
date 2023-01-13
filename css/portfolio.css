@@ -16,6 +16,10 @@ ul {
     --secondary-text: #757575;
     --background-color: #2F303A;
     --main-background-color: #ffffff;
+    --logo-black-part: #000000;
+    --border-elements-color: #ECECEC;
+    --secondary-bg-color: #F5F4FA;
+    --icons-border: #EEEEEE;
 }
 
 .container {
@@ -33,12 +37,13 @@ ul {
 /* -------------------HEADER------------------ */
 
 .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-elements-color);
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .site-nav {
@@ -54,7 +59,6 @@ ul {
 
 .container.line-nav {
     display: flex;
-    height: 80px;
     align-items: center;
 }
 
@@ -87,7 +91,13 @@ ul {
 }
 
 .header-logo .colorsplit-header {
-    color: #000000;
+    color: var(--logo-black-part);
+}
+
+.link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav-link:not(:last-child) {
@@ -97,7 +107,6 @@ ul {
 .contact-links {
     display: flex;
     margin: 0;
-    padding: 0;
     margin-left: auto;
 }
 
@@ -113,6 +122,7 @@ ul {
 
 .mail {
     margin-right: 50px;
+    padding: 32px 0;
 
     text-decoration: none;
     color: var(--secondary-text);
@@ -122,6 +132,8 @@ ul {
 }
 
 .phone {
+    padding: 32px 0;
+
     color: var(--secondary-text);
     text-decoration: none;
     font-weight: 500;
@@ -141,14 +153,13 @@ ul {
 .button-list {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 50px;
     padding: 0;
 } 
 
 .button-portfolio {
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 50px;
 
     font-weight: 500;
     font-size: 16px;
@@ -157,7 +168,7 @@ ul {
     border: none;
     cursor: pointer;
     font-family: inherit;
-    background: #F5F4FA;
+    background: var(--secondary-bg-color);
 }
 
 .button-portfolio:not(last-child) {
@@ -167,7 +178,7 @@ ul {
 .button-portfolio:hover,
 .button-portfolio:focus {
     background-color: var(--brand-blue-color);
-    color: #ffffff;
+    color: var(--main-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
 }
@@ -184,14 +195,14 @@ ul {
     margin-right: 30px;
     margin-bottom: 30px;
 
-    border: 1px solid #EEEEEE;
-    width: 370px;
-    height: 404px;
-    background: #FFFFFF;
+    background: var(--main-background-color);
 }
 
 .image-text {
     padding: 20px 24px;
+
+    border: 1px solid var(--icons-border);
+    border-top: none;
 }
 
 .list-content:nth-child(3n) {
@@ -222,9 +233,10 @@ ul {
 
 .footer {
     background-color: var(--background-color);
+
 }
 
-.footer-container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
