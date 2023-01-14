@@ -108,6 +108,7 @@ ul {
     display: flex;
     margin: 0;
     margin-left: auto;
+    padding: 0;
 }
 
 .contact-links .mail:hover,
@@ -233,7 +234,6 @@ ul {
 
 .footer {
     background-color: var(--background-color);
-
 }
 
 .footer {
@@ -280,10 +280,17 @@ ul {
     color: var(--main-background-color);
     text-decoration: none;
 }
-
 .mail-footer,
 .phone-footer {
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+.mail-footer:hover,
+.mail-footer:focus {
+    color: var(--brand-blue-color);
+}
+.phone-footer:hover,
+.phone-footer:focus {
+    color: var(--brand-blue-color);
 }
